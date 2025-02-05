@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html,body {
+            background-color: #1f242d;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            position: sticky;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 25px 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+
+        }
+
+        .navbar .logo {
+            font-size: 35px;
+            font-weight:lighter;
+            font-family: cursive;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            margin-left: 35px;
+        }
+
+        .navbar ul li a {
+            font-size: 20px;
+            font-weight: 500;
+            transition: .5s;
+        }
+
+        .navbar ul li:hover a,
+        .navbar ul li.active a {
+            color: #FF007F;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #04eed6;
+            flex-grow: 1;
+            margin-bottom: 30px;
+        }
+
+        .project {
+            color: white;
+            padding: 1rem;
+            margin: 1rem auto;
+            width: 65%;
+            box-shadow: 0 0 10px #FF007F;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 3%;
+        }
+
+        .project h3{
+            color: #4c68d7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px 0 12px 0;
+            background: linear-gradient(90deg, #4c68d7, #8a45c5);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 5%;
+            }
+
+            .navbar .logo {
+                font-size: 50px;
+            }
+
+            .navbar ul li {
+                margin-left: 10px;
+            }
+
+            .navbar ul li a {
+                font-size: 15px;
+            }
+
+            .project {
+                width: 95%;
+                padding: 0.8rem;
+            }
+
+            .project h3 {
+                font-size: 1.2rem;
+            }
+
+            .project p {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar ul {
+                flex-direction: row;
+                justify-content: space-between;
+                background: #1f242d;
+                background:transparent;
+                position: absolute;
+                top: 60px;
+                left: 20px;
+                width: 90%;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            section{
+                margin-top: 200px;
+            }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .project {
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+            .project h3 {
+                font-size: 1rem;
+            }
+
+            .project p {
+                font-size: 0.8rem;
+            }
+
+            footer {
+                margin-top: 100px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: AI-powered chatbot for admission process</h3>
+                <p>A smart AI-powered chatbot designed to assit students with admission queries, provide personalized
+                    guidance, and simply access to academic and administrative information</p>
+            </div>
+            <div class="project">
+                <h3>Project 2 : Mental Health Tracker</h3>
+                <p>A mental wellness and self caring app that helps users track their mood, symptoms, and daily
+                    experiences.It features a anonymous community chat for interaction, virtual therapy with exercises
+                    and relaxation activitites, and entertainment options like music, podcasts, jokes, and games,The app
+                    promotes well-being through self-tracking, therapy, and engaging content, creating a supportive and
+                    uplifting space for users.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: Online shopping cart</h3>
+                <p>A Java-based project simulating a shoppimg platform with features like item categorization,
+                    adding/removing items to/from the cart, and a checkout queue.It demonstrates object-oriented
+                    programming, use of diffrent types of data structures, and a text-based interactive interface.</p>
+            </div>
+            <div class="project">
+                <h3>Project 4: Smart Stick for Visually Impaired People</h3>
+                <p>Design and implement a Smart Stick equipped with obstacle detection, auditory, and vibrational
+                    feedback, aimed at enhancing the mobility and safety of visually impaired individuals.The project
+                    will utilize ultrasonic sensors for detecting obstacles and provide real-time feedback through
+                    vibration and sound</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gayatri Pratap Pawar. All rights reserved. | <a
+                href="https://shorturl.at/VBkxX">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #1f242d;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            position: sticky;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 25px 9%;
+            /* background: slateblue; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            font-size: 35px;
+            font-weight: lighter;
+            font-family: cursive;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            margin-left: 35px;
+        }
+
+        .navbar ul li a {
+            font-size: 20px;
+            font-weight: 500;
+            transition: .5s;
+        }
+
+        .navbar ul li:hover a,
+        .navbar ul li.active a {
+            color: #FF007F;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: -50px;
+            text-align: center;
+            padding: 16px 0 ;
+            background: linear-gradient(90deg, #4c68d7, #8a45c5);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        .skill{
+            width:200px;
+            box-shadow: 0 0 10px #FF007F;
+            text-align: center;
+            line-height: 25px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            display: inline-block;
+            margin: 0 20px 20px 0;
+            /* border: 2px dotted #009688; */
+            border-radius: 5%;
+        }
+
+        .skills {
+            text-align: center;
+        }
+
+        .skills h2 {
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: #04eed6;
+        }
+
+        .skill i {
+            font-size: 2.5rem;
+            color: #5cff56;
+            margin-bottom: 10px;
+        }
+
+        .skill-text {
+            font-size: 18px;
+            color: #FF007F;
+        }
+
+        span{
+            color: goldenrod;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 5%;
+            }
+
+            .navbar .logo {
+                font-size: 50px;
+            }
+
+            .navbar ul li {
+                margin-left: 10px;
+            }
+
+            .navbar ul li a {
+                font-size: 15px;
+            }
+
+            .skill {
+                width: 120px;
+                padding: 20px 0;
+            }
+
+            .skill i {
+                font-size: 1.5rem;
+            }
+
+            .skill-text {
+                font-size: 14px;
+            }
+
+            .skills h2 {
+                font-size: 24px;
+            }
+
+            section {
+                padding: 20px;
+                height: auto;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar ul {
+                flex-direction: row;
+                justify-content: space-between;
+                background: #1f242d;
+                background:transparent;
+                position: absolute;
+                top: 60px;
+                left: 20px;
+                width: 90%;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .skills{
+                margin-bottom: 50px;
+            }
+
+            .skill {
+                width: 100px;
+                padding: 15px 0 10px;
+            }
+
+            .skill i {
+                font-size: 1.2rem;
+            }
+
+            .skill-text {
+                font-size: 12px;
+            }
+
+            .skills h2 {
+                margin-top: 80px;
+                font-size: 20px;
+            }
+
+            .foot{
+                padding-top: 20px;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="Skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="col1">
+                <div class="skill">
+                    <i class='bx bxl-java'></i>
+                    <div class="skill-text">Java</div>
+                    <span class="rating">★ ★ ★ ★ </span>
+                </div>
+                <div class="skill">
+                    <i class='bx bxl-python'></i>
+                    <div class="skill-text">Python</div>
+                    <span class="rating">★ ★ ★ ★ </span>
+                </div>
+                <div class="skill">
+                    <i class='bx bxl-html5'></i>
+                    <div class="skill-text">HTML</div>
+                    <span class="rating">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="skill">
+                    <i class='bx bxl-css3'></i>
+                    <div class="skill-text">CSS</div>
+                    <span class="rating">★ ★ ★ ★ </span>
+                </div>
+                <div class="skill">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <div class="skill-text">C++</div>
+                    <span class="rating">★ ★ ★ </span>
+                </div>
+                <div class="skill">
+                    <i class='bx bxl-figma' ></i>
+                    <div class="skill-text">Figma</div>
+                    <span class="rating">★ ★ ★ ★ ★</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gayatri Pratap Pawar. All rights reserved. | <a href="https://shorturl.at/VBkxX">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+
+</html>
